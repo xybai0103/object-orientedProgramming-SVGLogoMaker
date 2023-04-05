@@ -5,7 +5,7 @@ const Triangle = require('../lib/triangle.js');
 describe('Triangle', () => {
   test('should render the string for a SVG file with a triangle and the given shape color', () => {
     const shape = new Triangle();
-    shape.color = 'red';
+    shape.shapeColor = 'red';
     expect(shape.render()).toEqual('<polygon points="150, 0 264, 182 36, 182" fill="red" />');
   });
 });
